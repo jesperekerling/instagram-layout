@@ -32,9 +32,10 @@ main {
 .select-feed ul li {
     display: inline-block;
     padding: 0.5rem;
+    position: relative;
 }
 .select-feed .active {
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 #right-side {
@@ -76,4 +77,29 @@ svg { width: 100px; }
 }
 .change-account {
     justify-content: right;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+nav ul {
+    display: block;
+    padding: 0;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+nav ul li:hover { 
+    background-color: #eee;
+}
+nav ul li svg {
+    width: 30px;
+}
+nav ul li.bottom-menu {
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 1rem;
 }
