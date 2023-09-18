@@ -16,10 +16,10 @@ a {
 
 #left-side {
     order: 1;
-    padding: 2rem;
+    padding: 1.5rem;
     border-right: 1px solid #eee;
     height: 100vh;
-    flex: 0 0 250px
+    flex: 0 0 200px
 }
 main {
     order: 2;
@@ -82,6 +82,7 @@ svg { width: 100px; }
 nav a {
     color: #000;
     text-decoration: none;
+    display: block;
 }
 nav ul {
     display: block;
@@ -89,14 +90,20 @@ nav ul {
 }
 nav ul li {
     list-style-type: none;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0;
 }
 nav ul li:hover { 
     background-color: #eee;
+    border-radius: 5px;
+}
+nav .active {
+    font-weight: bold;
 }
 nav ul li svg {
     width: 30px;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 nav ul li.bottom-menu {
     justify-content: flex-end;
