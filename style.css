@@ -4,7 +4,8 @@ body {
     font-family: -apple-system, "system-ui", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a {
-    color: #0095f6;
+    color: #000;
+    text-decoration: none;
 }
 
 #layout-container {
@@ -21,6 +22,16 @@ a {
     height: 100vh;
     flex: 0 0 200px
 }
+#left-side ul {
+    list-style: none;
+}
+#left-side ul li a {
+    display: block;
+    padding: 1rem;
+}
+#left-side ul li svg {
+    width: 50px;
+}
 main {
     order: 2;
     flex: 1;
@@ -32,10 +43,9 @@ main {
 .select-feed ul li {
     display: inline-block;
     padding: 0.5rem;
-    position: relative;
 }
 .select-feed .active {
-    font-weight: bold;
+    font-weight: bold;;
 }
 
 #right-side {
@@ -49,12 +59,15 @@ svg { width: 100px; }
 
 
 /* Stuff to right side bar */
-#user-badge {
+#user-badge, #follow-recommendation {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 330px;
+}
+#user-badge {
+    margin-bottom: 2rem;
 }
 .user-thumb {
     flex: 0 0 70px;
@@ -74,6 +87,9 @@ svg { width: 100px; }
 }
 .user-nickname {
     font-weight: bold;
+}
+.blue-link {
+    color: #0095f6;
 }
 .change-account {
     justify-content: right;
