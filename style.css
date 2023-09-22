@@ -17,7 +17,7 @@ a {
 
 #left-side {
     order: 1;
-    padding: 1.5rem;
+    padding: 0.5rem;
     border-right: 1px solid #eee;
     height: 100vh;
     flex: 0 0 200px
@@ -30,7 +30,7 @@ a {
     padding: 1rem;
 }
 #left-side ul li svg {
-    width: 50px;
+    width: 24px;
 }
 main {
     order: 2;
@@ -45,7 +45,7 @@ main {
     padding: 0.5rem;
 }
 .select-feed .active {
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 #right-side {
@@ -55,7 +55,10 @@ main {
 }
 
 
-svg { width: 100px; }
+#left-side svg.logo {
+    width: 100px;
+    margin: 2rem;
+}
 
 
 /* Stuff to right side bar */
@@ -65,9 +68,13 @@ svg { width: 100px; }
     align-items: center;
     justify-content: space-around;
     width: 330px;
+    font-size: 14px;
 }
 #user-badge {
     margin-bottom: 2rem;
+}
+#follow-recommendation {
+    margin-bottom: 1rem;
 }
 .user-thumb {
     flex: 0 0 70px;
@@ -85,8 +92,11 @@ svg { width: 100px; }
     align-items: left;
     flex: 1;
 }
-.user-nickname {
+.user__nickname {
     font-weight: bold;
+}
+.user__first-name {
+    color: #737373;
 }
 .blue-link {
     color: #0095f6;
@@ -103,26 +113,38 @@ nav a {
 nav ul {
     display: block;
     padding: 0;
+    margin: 0;
 }
 nav ul li {
     list-style-type: none;
-    padding: 0.5rem;
+    padding: 0.2rem;
     margin: 0;
 }
 nav ul li:hover { 
-    background-color: #eee;
+    background-color: #f2f2f2;
     border-radius: 5px;
 }
 nav .active {
     font-weight: bold;
 }
-nav ul li svg {
-    width: 30px;
+nav ul li svg, nav ul li img {
+    width: 24px;
     margin-right: 1rem;
     vertical-align: middle;
 }
+nav ul li img {
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 nav ul li.bottom-menu {
     justify-content: flex-end;
     position: absolute;
     bottom: 1rem;
+    width: 190px;
+}
+h3 {
+    color: #737373;
+    font-size: 14px;
 }
